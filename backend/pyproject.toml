@@ -11,9 +11,8 @@ dependencies = [
   "pydantic-settings",
   "pyjwt",
   "argon2-cffi",
-  "redis",
-  "arq",
   "python-multipart",
+  "apscheduler>=3.10,<4",
 ]
 
 [project.optional-dependencies]
@@ -24,3 +23,6 @@ include = ["app*"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
