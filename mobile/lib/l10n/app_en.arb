@@ -1,1 +1,185 @@
-{ "@@locale": "en", "appName": "Tandem" }
+{
+  "@@locale": "en",
+  "appName": "Tandem",
+  "common_appIconLabel": "{appName} logo",
+  "@common_appIconLabel": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "common_back": "Back",
+  "common_close": "Close",
+  "common_continue": "Continue",
+  "common_couldNotSave": "Could not save. Check your connection and try again.",
+  "common_getStarted": "Get started",
+  "common_loadFailed": "Could not load the data.",
+  "common_loading": "Loading",
+  "common_monthsShort": "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec",
+  "common_navHome": "Home",
+  "common_navProgress": "Progress",
+  "common_navTasks": "Tasks",
+  "common_navTeam": "Team",
+  "common_offlineBanner": "No connection. You can read the tasks already loaded. Editing needs a connection.",
+  "common_retry": "Try again",
+  "common_skip": "Skip",
+  "common_tagline": "Who does what, by when.",
+  "common_weekdaysShort": "Mon|Tue|Wed|Thu|Fri|Sat|Sun",
+  "errors_emailTaken": "This email is already used.",
+  "errors_forbidden": "You are not allowed to do this.",
+  "errors_invalidCredentials": "The email or password is not right. Try again, or reset your password.",
+  "errors_lastAdmin": "Make another member an Admin before you leave.",
+  "errors_network": "No connection. Check your network and try again.",
+  "errors_notAssignee": "Only the assignee can change this task.",
+  "errors_planRequired": "This is part of a paid plan.",
+  "errors_taskConflict": "Someone changed this task first. It has been refreshed.",
+  "errors_taskNotFound": "This task no longer exists.",
+  "errors_unauthenticated": "Sign in to continue.",
+  "errors_unknown": "Something went wrong. Try again.",
+  "errors_validation": "Check the information and try again.",
+  "notifications_allowAction": "Allow reminders",
+  "notifications_allowBody": "{appName} tells you when a task is assigned to you and before a deadline. You can change this in settings.",
+  "@notifications_allowBody": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "notifications_allowNotNow": "Not now",
+  "notifications_allowTitle": "Allow reminders?",
+  "onboarding_body1": "One owner and one date for every task, in plain view of the team.",
+  "onboarding_body2": "The dashboard shows what is done, what is late and who has what.",
+  "onboarding_body3": "One reminder per task reaches you before the deadline, not after.",
+  "onboarding_step": "Step {current} of {total}",
+  "@onboarding_step": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "onboarding_title1": "Everyone sees who owns what",
+  "onboarding_title2": "Progress at a glance",
+  "onboarding_title3": "Reminded before it is due",
+  "settings_changePassword": "Change password",
+  "settings_editProfileTitle": "Edit profile",
+  "settings_email": "Email",
+  "settings_emailInvalid": "Enter a valid email address.",
+  "settings_feedbackAbout": "What is it about?",
+  "settings_feedbackEmpty": "Write a few words first.",
+  "settings_feedbackHint": "Describe it in a few words",
+  "settings_feedbackIntro": "Tell us what would help your team. We tell you when it is built.",
+  "settings_feedbackMessage": "Your message",
+  "settings_feedbackSend": "Send feedback",
+  "settings_feedbackThanks": "Thank you. We have your message.",
+  "settings_feedbackTitle": "Feedback",
+  "settings_fullName": "Full name",
+  "settings_kindIdea": "An idea",
+  "settings_kindOther": "Something else",
+  "settings_kindProblem": "A problem",
+  "settings_languageArabicSub": "Arabic, right to left",
+  "settings_languageEnglishSub": "English",
+  "settings_languageFrenchSub": "French",
+  "settings_languageNote": "Arabic switches every screen to a right-to-left layout.",
+  "settings_languageTitle": "Language",
+  "settings_nameRequired": "Enter your name.",
+  "settings_policyDelete": "You can ask us to delete your account and data at any time.",
+  "settings_policyPush": "Push notifications carry generic text, never a task title.",
+  "settings_policyServer": "The data is stored on a server in Algeria.",
+  "settings_policyStored": "Data we store: your name, your email, your team membership and your tasks.",
+  "settings_privacyAgree": "Agree and continue",
+  "settings_privacyConsent": "I agree to the processing of my personal data",
+  "settings_privacyIntro": "{appName} keeps only what it needs: your name, your email and the tasks in your teams.",
+  "@settings_privacyIntro": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "settings_privacyPolicyTitle": "Privacy policy",
+  "settings_privacyReadPolicy": "Read the full privacy policy",
+  "settings_privacyStorage": "Your data is stored on a server in Algeria. Notifications never show task text. You can ask us to delete your account and data at any time.",
+  "settings_privacyTitle": "Privacy and your data",
+  "settings_profileSaved": "Profile saved.",
+  "settings_saveChanges": "Save changes",
+  "settings_signOut": "Sign out",
+  "settings_signOutBody": "You will need your email and password to come back.",
+  "settings_signOutTitle": "Sign out of {appName}?",
+  "@settings_signOutTitle": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "settings_staySignedIn": "Stay signed in",
+  "settings_usePhoneLanguage": "Use the phone language",
+  "tasks_backToTasks": "Back to tasks",
+  "tasks_boardTitle": "Board",
+  "tasks_cannotMoveCard": "Only the assignee can move this card.",
+  "tasks_changeStatus": "Change status",
+  "tasks_doneBody": "Thank you, {name}. The team is at {done} of {total} tasks.",
+  "@tasks_doneBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tasks_doneLabel": "Done",
+  "tasks_doneTitle": "{title} is done",
+  "@tasks_doneTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "tasks_dueTomorrowTag": "Due tomorrow",
+  "tasks_emptyBodyCreator": "Tasks you own appear here with a date. Add one, or ask a teammate to assign you one.",
+  "tasks_emptyBodyMember": "Tasks you own appear here with a date. Ask a Manager or an Admin to assign you one.",
+  "tasks_emptyTitle": "Nothing assigned to you",
+  "tasks_labelDueTomorrow": "due tomorrow",
+  "tasks_labelOverdue": "overdue",
+  "tasks_loading": "Loading tasks",
+  "tasks_newTask": "New task",
+  "tasks_overdueTag": "Overdue",
+  "tasks_ownerWithLabel": "{name}, {label}",
+  "@tasks_ownerWithLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tasks_progressCount": "{done} of {total}",
+  "@tasks_progressCount": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tasks_statusDone": "Done",
+  "tasks_statusInProgress": "In progress",
+  "tasks_statusTodo": "To do",
+  "tasks_undo": "Undo"
+}
