@@ -1,4 +1,4 @@
-from datetime import datetime, time, timedelta, timezone
+from datetime import UTC, datetime, time, timedelta
 from zoneinfo import ZoneInfo
 
 from app.models.enums import ReminderOffset
@@ -7,9 +7,7 @@ APP_TZ = ZoneInfo("Africa/Algiers")
 ON_DAY_HOUR = 8
 
 
-def compute_reminder_at(
-    deadline: datetime | None, offset: str | None
-) -> datetime | None:
+def compute_reminder_at(deadline: datetime | None, offset: str | None) -> datetime | None:
     if deadline is None or offset is None:
         return None
     if offset == ReminderOffset.on_day:
@@ -26,7 +24,7 @@ def reset_reminders(task) -> None:
     """Call whenever the deadline or the reminder offset is set or changed."""
     reminder_at = compute_reminder_at(task.deadline, task.reminder_offset)
     # A reminder time already in the past would fire instantly, so skip it.
-    if reminder_at and reminder_at <= datetime.now(timezone.utc):
+    if reminder_at and reminder_at <= datetime.now(UTC):
         reminder_at = None
     task.reminder_at = reminder_at
     task.reminder_sent_at = None
